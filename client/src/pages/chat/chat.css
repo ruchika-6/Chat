@@ -1,0 +1,29 @@
+.Chat{
+    box-sizing: border-box;
+    background-color: #fda469;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.cContainer{
+    width: 100%;
+    height: 91%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap:10px
+}
+
+.cl{
+    min-width: 200px;
+    width: 30%;
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cr{
+    width: 70%;
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

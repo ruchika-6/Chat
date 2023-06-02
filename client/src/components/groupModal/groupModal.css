@@ -1,0 +1,94 @@
+.GroupModal{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.537);
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #646464;
+    font-size: 18px;
+}
+
+.gContainer{
+    min-width: 300px;
+    min-height: 300px;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    position: relative;
+    text-align: center;
+    border: 3px #fda469 solid;
+}
+
+.gContainer>i{
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.733);
+}
+
+.gImg{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* border: 5px #fda469 solid; */
+}
+
+.gUsers{
+    display: flex;
+}
+
+.gItem{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin: 10px;
+}
+
+.gBtn{
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #fda469;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+.gBtn:hover{
+    background-color: #f8924e;
+}
+
+.public{
+    font-size: 14px;
+}
+
+.checkbox{
+    padding: 0px;
+    display: inline;
+    width: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+.gPublic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gFooter{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

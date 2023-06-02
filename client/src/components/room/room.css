@@ -1,0 +1,47 @@
+.roomItem {
+  border: 1px solid lightgray;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 5px;
+  align-items: center;
+  color: #646464;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.riImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.riDesc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  flex: 2;
+}
+
+.riTitle {
+  font-size: 20px;
+  color: rgb(35, 35, 122);
+}
+
+.riBtn>button{
+  padding: 15px;
+  background-color: rgb(177, 234, 92);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #444;
+  font-size: 16px
+}
+
+.riBtn>button:hover{
+  background-color: rgb(152, 205, 74);
+}

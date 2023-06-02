@@ -1,0 +1,152 @@
+.SideDrawer{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    border-bottom: 3px #fda469 solid;
+}
+
+.sItem{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:10px;
+    position: relative;
+}
+
+input{
+    padding: 7px 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    outline: 1.5px #fda469 solid;
+}
+
+.sItem>button{
+    height: 100%;
+    padding: 7px;
+    border: none;
+    background-color: #fda469;
+    border-radius: 5px;
+    color: #343434;
+    cursor: pointer;
+}
+
+.sItem>button:hover{
+    background-color:#f8924e;
+    color: #343434;
+}
+
+.sButton{
+    cursor: pointer;
+    padding: 5px;
+}
+
+.sButton:hover{
+    background-color: #d4d4d4;
+    border-radius: 50%;  
+}
+
+.profilePic{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 10px;
+    border: #fda469 2px solid;
+}
+
+.sProfile{
+    display: flex;
+    flex-direction: column;
+    top: 50px;
+}
+
+.sMenu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 47px;
+    left: -40px;
+    z-index: 2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sMenu button{
+    width: 120px;
+    padding: 10px;
+    border: none;
+    background-color: #fda469;
+    cursor: pointer;
+    color: #343434;
+}
+
+.sMenu button:hover{
+    background-color: #f8924e;
+}
+
+.openDrawer{
+    position: absolute;
+    background-color: #fda469;
+    top: 57px;
+    left: 0px;
+    z-index: 2;
+    height: 92%;
+    width: 250px;
+    padding: 10px;
+    animation: 1s openDrawer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@keyframes openDrawer{
+    from {
+        margin-left: -100%;
+      }
+      to {
+        margin-left: 0%;
+      }
+}
+
+.closeDrawer{
+    position: absolute;
+    background-color: #fda469;
+    top: 57px;
+    left: -240px;
+    z-index: 2;
+    height: 87vh;
+    width: 200px;
+    padding: 20px;
+    animation: 2s closeDrawer;
+}
+
+@keyframes closeDrawer{
+    from {
+        margin-left: 0%;
+      }
+      to {
+        margin-left: -100%;
+      }
+}
+
+.hide{
+    display: none;
+}
+
+.sItem>i{
+    cursor: pointer;
+}
+
+.sItem>i:hover + .hide,.show{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    align-items: center;
+    gap: 5px;
+    background-color: rgb(172, 162, 151);
+    padding: 7px;
+    border-radius: 5px;
+    color: #f4f4f4;
+}

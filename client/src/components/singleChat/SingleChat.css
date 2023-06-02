@@ -1,0 +1,105 @@
+.SingleChat{
+  width: 100%;
+  height: 100%;
+  color: #646464;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sContainer{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+}
+.sHeader{
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+}
+
+.sHeader>i{
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.sHeader>i:hover{
+  background-color: #d4d4d4;
+}
+
+.sChat{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 3px;
+  background-color: #c4c4c4;
+  border-radius: 5px;
+  overflow-y: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.sTitle{
+  font-size: 20px;
+}
+
+.sText{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.sText>input{
+  width: 100%;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  outline: none
+}
+
+.sText>button{
+  padding: 5px;
+  height: 100%;
+  border-radius: 5px;
+  border: none;
+  background-color: #055f8f;
+  cursor: pointer;
+  color: #f4f4f4;
+}
+
+.sText>i{
+  background-color: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+.messages{
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5px;
+}
+
+.messages::-webkit-scrollbar{
+  display: none;
+}
+
+.emojiPicker{
+  position: absolute;
+  bottom: 32px;
+  left:0px
+}

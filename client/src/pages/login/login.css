@@ -1,0 +1,80 @@
+.login{
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    padding: 50px;
+    max-width: 380px;
+    /* border: #93a2ab 2px solid; */
+    border: #fda469 2px solid;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.lInput{
+    margin: 3px;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    /* border: #949ba2 1.5px solid; */
+    border: #fda469 1.5px solid;
+    width: 100%;
+}
+
+.lButton{
+    width: 100%;
+    padding: 7px;
+    /* background-color: #003580; */
+    background-color: #fda469;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    margin-top: 3px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.lButton:hover{
+    background-color: #f8924e;
+}
+
+span{
+    max-width:170px;
+    margin: 0;
+    padding: 0;
+}
+
+.error{
+    font-size: 14px;
+    color: red;
+}
+
+.ltext{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.lImage{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.google{
+    width: 179px;
+}
