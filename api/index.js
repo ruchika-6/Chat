@@ -7,11 +7,14 @@ import UserRoute from "./routes/users.js";
 import cookieParser from "cookie-parser";
 import { Server } from "socket.io";
 import path from "path";
+import dotenv from "dotenv"
+
+dotenv.config();
 
 const app = express();
 async function connect(){
     try{
-        mongoose.connect('mongodb://localhost:27017/chat');
+        mongoose.connect(process.env.MONGODB_URI);
         console.log("Mongodb connected...");
     }catch(error)
     {
