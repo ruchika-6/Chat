@@ -19,5 +19,8 @@
     "mongoose": "^7.2.0",
     "nodemon": "^2.0.22",
     "socket.io": "^4.6.1"
+  },
+  "engines": {
+    "node": ">=NODE_JS_VERSION"
   }
 }
