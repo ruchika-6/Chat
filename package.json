@@ -21,6 +21,6 @@
     "socket.io": "^4.6.1"
   },
   "engines": {
-    "node": ">=NODE_JS_VERSION"
+    "node": ">=14.20.1"
   }
 }
