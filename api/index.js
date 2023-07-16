@@ -6,6 +6,7 @@ import Messages from "./routes/messages.js"
 import UserRoute from "./routes/users.js";
 import cookieParser from "cookie-parser";
 import { Server } from "socket.io";
+import path from "path";
 
 const app = express();
 async function connect(){
@@ -29,11 +30,21 @@ mongoose.connection.on("connected", ()=>{
 //Middlewares
 app.use(cookieParser());
 app.use(express.json());
-app.use("/api/auth", AuthRoute);
-app.use("/api/chat", ChatRoute);
-app.use("/api/users", UserRoute);
-app.use("/api/messages", Messages);
+app.use("/auth", AuthRoute);
+app.use("/chat", ChatRoute);
+app.use("/users", UserRoute);
+app.use("/messages", Messages);
 
+// --------------------------deployment------------------------------
+
+const __dirname1 = path.resolve();
+app.use(express.static(path.join(__dirname1, "/client/build")));
+
+app.get("*", (req, res) =>
+res.sendFile(path.resolve(__dirname1, "client", "build", "index.html"))
+);
+
+// --------------------------deployment------------------------------
 
 //ERROR HANDLING MIDDLEWARE
 app.use((err,req,res,next)=>{
