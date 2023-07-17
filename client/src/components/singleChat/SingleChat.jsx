@@ -8,7 +8,7 @@ import axios from "axios";
 import io from "socket.io-client"
 import Picker from "emoji-picker-react";
 
-const ENDPOINT = "http://localhost:8000";
+const ENDPOINT = "https://chatapp-cz6w.onrender.com";
 var socket,selectedChatCompare;
 
 const SingleChat = ({fetchAgain, setFetchAgain}) => {
