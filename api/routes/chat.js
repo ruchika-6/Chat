@@ -1,7 +1,7 @@
 import express from "express";
 import User from "../models/User.js"
 import Chat from "../models/Chat.js"
-import { verifyToken } from "../Utils/verifyToken.js";
+import { verifyToken } from "../utils/verifyToken.js";
 
 const router = express.Router();
 
