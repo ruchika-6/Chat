@@ -1,5 +1,5 @@
 import express from "express";
-import { verifyToken } from "../utils/verifyToken.js";
+import { verifyToken } from "../Utils/verifyToken.js";
 import Message from "../models/Message.js";
 import Chat from "../models/Chat.js";
 import User from "../models/User.js"
