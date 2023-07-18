@@ -1,6 +1,8 @@
 # Chat
 This is a real time Chat App, built using the MERN stack, that supports one-on-one as well as group chats. Using this app, any user can just sign in, and start chatting with anyone around the world, real time. Sending and receiving of messages is made real time using the Socket.IO library.
 
+Live Demo: https://chatapp-cz6w.onrender.com/
+
 Key Features:
 1. Registration to create profile, and sign in to access your profile anytime.
 2. Sign In using Google to simplify the process.
