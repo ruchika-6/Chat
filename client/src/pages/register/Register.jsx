@@ -86,7 +86,7 @@ const Register = ()=>{
                 }
                 OR
                 <LoginSocialGoogle
-                    client_id={"851019704682-6g4hvpgnk9pp68kjrohl0l6mmrdmssj6.apps.googleusercontent.com"}
+                    client_id={"476476878889-mcameiiv4k1e31147bc2q8st3o6ejnak.apps.googleusercontent.com"}
                     scope="openid profile email"
                     discoveryDocs="claims_supported"
                     access_type="offline"

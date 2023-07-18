@@ -150,3 +150,39 @@ input{
     border-radius: 5px;
     color: #f4f4f4;
 }
+
+@media only screen and (max-width: 600px) {
+    .SideDrawer{
+        padding: 10px;
+        display: flex;
+        gap: 10px;
+        background-color: #f4f4f4;
+        box-sizing: border-box;
+        border-bottom: 3px #fda469 solid;
+    }
+
+    .openDrawer{
+        position: absolute;
+        background-color: #fda469;
+        top: 100px;
+        left: 0px;
+        z-index: 2;
+        height: 87%;
+        width: 250px;
+        padding: 10px;
+        animation: 1s openDrawer;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .closeDrawer{
+        position: absolute;
+        background-color: #fda469;
+        top: 100px;
+        left: -240px;
+        z-index: 2;
+        height: 87vh;
+        width: 200px;
+        padding: 20px;
+        animation: 2s closeDrawer;
+    }
+  }
